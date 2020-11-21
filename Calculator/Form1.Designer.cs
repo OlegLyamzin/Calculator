@@ -46,6 +46,7 @@
             this.textBoxCurrentOperand = new System.Windows.Forms.TextBox();
             this.labelSecondOperand = new System.Windows.Forms.Label();
             this.labelError = new System.Windows.Forms.Label();
+            this.buttonNumber0 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonNumber1
@@ -210,10 +211,9 @@
             // 
             // labelSecondOperand
             // 
-            this.labelSecondOperand.AutoSize = true;
-            this.labelSecondOperand.Location = new System.Drawing.Point(121, 0);
+            this.labelSecondOperand.Location = new System.Drawing.Point(5, 0);
             this.labelSecondOperand.Name = "labelSecondOperand";
-            this.labelSecondOperand.Size = new System.Drawing.Size(13, 15);
+            this.labelSecondOperand.Size = new System.Drawing.Size(129, 15);
             this.labelSecondOperand.TabIndex = 2;
             this.labelSecondOperand.Text = "0";
             this.labelSecondOperand.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -228,11 +228,22 @@
             this.labelError.Size = new System.Drawing.Size(0, 15);
             this.labelError.TabIndex = 3;
             // 
+            // buttonNumber0
+            // 
+            this.buttonNumber0.Location = new System.Drawing.Point(39, 143);
+            this.buttonNumber0.Name = "buttonNumber0";
+            this.buttonNumber0.Size = new System.Drawing.Size(28, 26);
+            this.buttonNumber0.TabIndex = 0;
+            this.buttonNumber0.Text = "0";
+            this.buttonNumber0.UseVisualStyleBackColor = true;
+            this.buttonNumber0.Click += new System.EventHandler(this.buttonNumber_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(144, 207);
+            this.Controls.Add(this.buttonNumber0);
             this.Controls.Add(this.labelError);
             this.Controls.Add(this.labelSecondOperand);
             this.Controls.Add(this.textBoxCurrentOperand);
@@ -281,6 +292,7 @@
         private System.Windows.Forms.TextBox textBoxCurrentOperand;
         private System.Windows.Forms.Label labelSecondOperand;
         private System.Windows.Forms.Label labelError;
+        private System.Windows.Forms.Button buttonNumber0;
     }
 }
 
